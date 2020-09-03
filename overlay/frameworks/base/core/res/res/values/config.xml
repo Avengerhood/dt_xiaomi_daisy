@@ -709,5 +709,9 @@
 
     <!-- Whether or not we should show vendor mismatch message -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
+	
+		 <!-- Screen off delay -->
+    	<integer name="config_screen_off_delay">0</integer>
+	<bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 
 </resources>
