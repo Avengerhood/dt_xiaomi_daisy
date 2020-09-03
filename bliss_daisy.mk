@@ -33,7 +33,7 @@ $(call inherit-product-if-exists, vendor/gapps/config.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 TARGET_GAPPS_OVERRIDE += \
     GoogleCamera \
