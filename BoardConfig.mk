@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/xiaomi/daisy
 
+
+# We modify several neverallows, so let the build proceed
+SELINUX_IGNORE_NEVERALLOWS := true
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
