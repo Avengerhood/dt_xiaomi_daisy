@@ -713,5 +713,8 @@
 		 <!-- Screen off delay -->
     	<integer name="config_screen_off_delay">0</integer>
 	<bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
+	
+	<!-- The name of the package that will hold the assistant role by default. -->
+    <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
 
 </resources>
