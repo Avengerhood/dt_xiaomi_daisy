@@ -29,18 +29,18 @@ $(call inherit-product, device/xiaomi/daisy/device.mk)
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 #GAPPS
-$(call inherit-product-if-exists, vendor/gapps/config.mk)
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+#$(call inherit-product-if-exists, vendor/gapps/config.mk)
+#TARGET_GAPPS_ARCH := arm64
+#TARGET_INCLUDE_STOCK_ARCORE := true
+#IS_PHONE := true
+#TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-TARGET_GAPPS_OVERRIDE += \
-    GoogleCamera \
-    Chrome \
-    Photos \
-    AudioFX \
-    Snap
+#TARGET_GAPPS_OVERRIDE += \
+#    GoogleCamera \
+#    Chrome \
+#    Photos \
+#    AudioFX \
+#    Snap
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
