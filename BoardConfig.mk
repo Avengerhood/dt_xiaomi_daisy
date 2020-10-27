@@ -65,8 +65,8 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
-USE_XML_AUDIO_POLICY_CONF := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
+#USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -147,13 +147,13 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_daisy
-TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_daisy
+#TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_daisy
+#TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_daisy
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
