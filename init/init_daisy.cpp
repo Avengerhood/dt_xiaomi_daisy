@@ -35,7 +35,7 @@
 char const *heapgrowthlimit;
 char const *heapminfree;
 
-using android::init::property_set;
+using ::android::base::SetProperty;
 
 void check_device()
 {
