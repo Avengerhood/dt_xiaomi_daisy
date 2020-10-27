@@ -199,8 +199,10 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-TARGET_EXCLUDE_QCOM_SEPOLICY := true
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#TARGET_EXCLUDE_QCOM_SEPOLICY := true
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
