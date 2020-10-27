@@ -464,10 +464,15 @@ PRODUCT_PACKAGES += \
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_FULL_TREBLE_OVERRIDE := true 
+
 PRODUCT_PACKAGES += \
     vndk-sp \
     vndk_package \
     com.android.vndk.current.on_vendor
+    
+    
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
