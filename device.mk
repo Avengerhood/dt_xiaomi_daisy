@@ -29,6 +29,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Binder
 PRODUCT_PACKAGES += \
